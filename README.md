@@ -20,8 +20,8 @@ feature to add :
 
 - [ ] calculate a calorie for a day
 
-- [ ] as a user i want to be able to add my weight/height and see the BMI and msg if its low or high or average
+- [ ] add weight/height and see the BMI and msg if its low or high or average
 
-- [ ] as a user i want to be able to create a plan of workouts and see plan calories .
+- [ ] create a plan of workouts and see plan calories .
 
 Trello Project Planning [here](https://trello.com/b/OpzPZ7t5/fitness-log)
