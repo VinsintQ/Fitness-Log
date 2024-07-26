@@ -2,7 +2,7 @@
 
 ## by : Mueen Ali
 
-### an application to track your workouts and health, where you can add workouts
+### an application to track your workouts , where you can add/edit workouts
 
 ### user stories :
 
