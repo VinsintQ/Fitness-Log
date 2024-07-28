@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editiong <%=workout.type %></title>
+  </head>
+
+  <body>
+    
+    <%= workout.Date %> 
+    <form action="/users/<%= user._id %>/workouts?_method=PUT" method="post">
+      <label for="type">Type</label>
+      <select name="type" id="type" value="<%=workout.type%>">
+        <option value="">Select</option>
+        <option value="Running" <%= workout.type === 'Running' ? 'selected' : '' %>>Running</option>
+        <option value="Walking" <%= workout.type === 'Walking' ? 'selected' : '' %>>Walking</option>
+        <option value="Cycling" <%= workout.type === 'Cycling' ? 'selected' : '' %>>Cycling</option>
+        <option value="Swimming" <%= workout.type === 'Swimming' ? 'selected' : '' %>>Swimming</option>
+      </select>
+      <label for="time">time</label>
+      <input type="number" name="Time" id="time" value="<%=workout.Time%>" />
+      <label for="calories">calories</label>
+      <input type="number" name="Calories" value="<%=workout.Calories%>" />
+      <label for="date">Date</label>
+      <input type="date" name="Date" id="date" value="04/04/2020 " />
+
+      <button type="submit">create</button>
+
+    </form>
+  </body>
+</html>

@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
-const Workout = new mongoose.Schema({
-  Type: {
+const WorkoutSchema = new mongoose.Schema({
+  type: {
     type: String,
-    enum: ["Running", "Walking", "Swiming", "Cycling"],
+    enum: ["Running", "Walking", "Swimming", "Cycling"],
   },
   Time: Number,
   Calories: Number,
@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema({
   age: Number,
   weight: Number,
   height: Number,
-  Workouts: [Workout],
+  Workouts: [WorkoutSchema],
 });
 
 const User = mongoose.model("User", userSchema);
