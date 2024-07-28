@@ -26,3 +26,6 @@ const userSchema = new mongoose.Schema({
   height: Number,
   Workouts: [Workout],
 });
+
+const User = mongoose.model("User", userSchema);
+module.exports = User;
