@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form action="/auth/register" method="post">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" />
+      </div>
+      <div>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <label for="Confirmpassword">Confirmpassword</label>
+        <input type="Confirmpassword" name="Confirmpassword" />
+      </div>
+
+      <div>
+        <label for="Gender">Gender</label>
+        <input type="text" name="Gender" id="Gender" />
+      </div>
+      <div>
+        <label for="weight">weight</label>
+        <input type="number" name="weight" id="weight" placeholder="in kg" />
+      </div>
+      <div>
+        <label for="height">height</label>
+        <input type="number" name="height" id="height" placeholder="in cm " />
+      </div>
+      <button type="submit">Create Account</button>
+    </form>
+  </body>
+</html>
