@@ -39,8 +39,8 @@ distanceField.addEventListener("change", () => {
 //functions
 function calculateCalories() {
   if (time && distance && type) {
-    // distanceField.classList.remove("hide");
-    // distanceLabel.classList.remove("hide");
+    distanceField.classList.remove("hide");
+    distanceLabel.classList.remove("hide");
     //for Running
     if (type === "Running") {
       const met = runMet(speed);
