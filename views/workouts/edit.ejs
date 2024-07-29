@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Editiong <%=workout.type %></title>
   </head>
-
+<!-- converting date  -->
+<% 
+const date = new Date(workout.Date);
+const formattedDate = date.toISOString().split('T')[0]; 
+%>
   <body>
     
     <%= workout.Date %> 
@@ -23,7 +27,8 @@
       <label for="calories">calories</label>
       <input type="number" name="Calories" value="<%=workout.Calories%>" />
       <label for="date">Date</label>
-      <input type="date" name="Date" id="date" value="04/04/2020 " />
+      
+      <input type="date" name="Date" id="date" value="<%=formattedDate%>" />
 
       <button type="submit">create</button>
 
