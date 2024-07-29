@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Editiong <%=workout.type %></title>
+    <script src="/script/scripts.js" defer></script>
+    <link rel="stylesheet" href="/stylesheet/style.css" />
   </head>
 <!-- converting date  -->
 <% 
@@ -12,10 +14,10 @@ const formattedDate = date.toISOString().split('T')[0];
 %>
   <body>
     
-    <%= workout.Date %> 
-    <form action="/users/<%= user._id %>/workouts?_method=PUT" method="post">
+   
+    <form action="/users/<%= user._id %>/workouts/<%=workout._id%>?_method=PUT" method="post">
       <label for="type">Type</label>
-      <select name="type" id="type" value="<%=workout.type%>">
+      <select name="type" id="type"  >
         <option value="">Select</option>
         <option value="Running" <%= workout.type === 'Running' ? 'selected' : '' %>>Running</option>
         <option value="Walking" <%= workout.type === 'Walking' ? 'selected' : '' %>>Walking</option>
@@ -24,13 +26,23 @@ const formattedDate = date.toISOString().split('T')[0];
       </select>
       <label for="time">time</label>
       <input type="number" name="Time" id="time" value="<%=workout.Time%>" />
-      <label for="calories">calories</label>
-      <input type="number" name="Calories" value="<%=workout.Calories%>" />
+
+      <label for="distance" class="distacelabel">Distance</label>
+      <input min="1"
+        placeholder="KM"
+        type="number"
+        name="distance"
+        id="distance"
+        value="<%=workout.Distance%>"
+        required
+      />
+      <label for="calories" >calories</label>
+      <input type="number" name="Calories"  id="calories" disabled  />
       <label for="date">Date</label>
       
       <input type="date" name="Date" id="date" value="<%=formattedDate%>" />
 
-      <button type="submit">create</button>
+      <button type="submit">update</button>
 
     </form>
   </body>

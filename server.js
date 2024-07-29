@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const methodOverride = require("method-override");
 const morgan = require("morgan");
 const session = require("express-session");
+
 // IMPORT PATH AT THE TOP OF SERVER
 const path = require("path");
 const isSignedIn = require("./middleware/is-signed-in.js");
@@ -35,6 +36,7 @@ app.use(
 );
 
 app.use(passUserToView);
+app.use(express.static(path.join(__dirname, "public")));
 // LINK TO PUBLIC DIRECTORY
 app.use(express.static(path.join(__dirname, "public")));
 app.get("/", (req, res) => {

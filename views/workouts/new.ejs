@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="/script/scripts.js" defer></script>
+    <link rel="stylesheet" href="/stylesheet/style.css" />
   </head>
   <body>
     <h1>adding workouts</h1>
     <form action="/users/<%= user._id %>/workouts" method="post">
       <label for="type">Type</label>
-      <select name="type" id="tupe">
+      <select name="type" id="type" required>
         <option value="">Select</option>
         <option value="Running">Running</option>
         <option value="Walking">Walking</option>
@@ -17,11 +19,23 @@
         <option value="Swimming">Swiming</option>
       </select>
       <label for="time">time</label>
-      <input type="number" name="Time" id="time" />
+      <input type="number" name="Time" id="time" min="1" required />
+
+      <label class="distancelabel" for="distance">Distance</label>
+      <input
+        placeholder="KM"
+        type="number"
+        name="Distance"
+        id="distance"
+        min="1"
+        required
+      />
+
       <label for="calories">calories</label>
-      <input type="number" name="Calories" />
+      <input type="number" id="calories" disabled />
+      <input type="number" name="Calories" class="send" hidden />
       <label for="date">Date</label>
-      <input type="date" name="Date" id="date" />
+      <input type="date" name="Date" id="date" required />
       <button type="submit">create</button>
     </form>
   </body>

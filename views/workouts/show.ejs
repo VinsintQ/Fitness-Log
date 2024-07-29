@@ -6,8 +6,10 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>Date :<%=workout.Date.toISOString().split('T')[0] %></h1>
     <h1>type :<%=workout.type %></h1>
     <h1>time :<%=workout.Time %></h1>
+    <h1>distance :<%=workout.Distance %></h1>
     <h1>calories :<%=workout.Calories %></h1>
     <a href="/users/<%= user._id %>/workouts/<%= workout._id %>/edit">
       Edit this application
