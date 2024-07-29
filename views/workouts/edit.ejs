@@ -27,7 +27,7 @@ const formattedDate = date.toISOString().split('T')[0];
       <label for="time">time</label>
       <input type="number" name="Time" id="time" value="<%=workout.Time%>" />
 
-      <label for="distance" class="distacelabel">Distance</label>
+      <label for="distance" class="distancelabel">Distance</label>
       <input min="1"
         placeholder="KM"
         type="number"
@@ -37,7 +37,10 @@ const formattedDate = date.toISOString().split('T')[0];
         required
       />
       <label for="calories" >calories</label>
-      <input type="number" name="Calories"  id="calories" disabled  />
+      <input type="number" id="calories" disabled />
+      <input type="number" name="Calories" class="send" hidden />
+
+      
       <label for="date">Date</label>
       
       <input type="date" name="Date" id="date" value="<%=formattedDate%>" />

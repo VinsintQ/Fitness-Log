@@ -67,10 +67,11 @@ function calculateCalories() {
     }
   }
   if (type == "Walking") {
-    // distanceField.classList.add("hide");
-    // distanceLabel.classList.add("hide");
+    distanceField.classList.add("hide");
+    distanceLabel.classList.add("hide");
   } else {
     // distanceField.classList.remove("hide");
+    // distanceLabel.classList.remove("hide");
   }
   if ((type == "Walking") & (time > 0)) {
     const met = 4;
