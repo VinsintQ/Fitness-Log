@@ -7,8 +7,9 @@
     <script src="/script/scripts.js" defer></script>
     <link rel="stylesheet" href="/stylesheet/style.css" />
   </head>
-  <body>
+  <body> <%- include('../partials/_navbar.ejs') %> 
     <h1>adding workouts</h1>
+   
     <form action="/users/<%= user._id %>/workouts" method="post">
       <label for="type">Type</label>
       <select name="type" id="type" required>

@@ -10,6 +10,8 @@ router.get("/", async (req, res) => {
 
     res.render("workouts/index.ejs", {
       workouts: currentUser.Workouts,
+      weight :currentUser.weight,
+      height :currentUser.height,
     });
   } catch (error) {
     console.log(error);

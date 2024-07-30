@@ -6,6 +6,7 @@
     <title>Document</title>
   </head>
   <body>
+    <%- include('../partials/_navbar.ejs') %> 
     <h1>Date :<%=workout.Date.toISOString().split('T')[0] %></h1>
     <h1>type :<%=workout.type %></h1>
     <h1>time :<%=workout.Time %></h1>

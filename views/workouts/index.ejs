@@ -6,16 +6,19 @@
     <title>Document</title>
   </head>
   <body>
-    <%- include('../partials/_navbar.ejs') %>
+    <%- include('../partials/_navbar.ejs') %> 
+    <h1>weight : <%=weight %> height :<%= height %></h1>
     <h1>Your workouts</h1>
 
     <a href="/users/<%=user._id%>/workouts/new">Add workout</a>
 
     <%workouts.forEach((workout)=>{ %>
-      <li>
-    <a href="/users/<%=user._id%>/workouts/<%=workout._id %>"><%=workout.type %></a> 
-</li>
+    <li>
+      <a href="/users/<%=user._id%>/workouts/<%=workout._id %>"
+        ><%=workout.type %></a
+      >
+    </li>
 
-   <% }) %>
+    <% }) %>
   </body>
 </html>

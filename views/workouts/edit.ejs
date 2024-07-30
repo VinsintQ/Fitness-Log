@@ -12,9 +12,10 @@
 const date = new Date(workout.Date);
 const formattedDate = date.toISOString().split('T')[0]; 
 %>
+
   <body>
     
-   
+    <%- include('../partials/_navbar.ejs') %> 
     <form action="/users/<%= user._id %>/workouts/<%=workout._id%>?_method=PUT" method="post">
       <label for="type">Type</label>
       <select name="type" id="type"  >
