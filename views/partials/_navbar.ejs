@@ -1,6 +1,7 @@
 <nav>
   <% if(user) { %>
   <a href="/users/<%= user._id %>/workouts">Your workouts</a>
+  <a href="/users/<%= user._id %>/bmi">BMI</a>
   <a href="/auth/sign-out">Sign Out</a>
   <% } else { %>
   <a href="/auth/sign-in">Sign In</a>

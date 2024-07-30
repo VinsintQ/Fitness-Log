@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('../partials/_navbar.ejs') %>
+    <form action="/users/<%= user._id %>/bmi?_method=PUT" method="post">
+        <label for="weight">weight</label>
+     <input type="text" name="weight" id="" value="<%= weight %>">
+
+     <label for="height">height</label>
+     <input type="text" name="height" id="" value="<%= height %>">
+
+  <button type="submit">update</button>
+    </form>
+</body>
+</html>

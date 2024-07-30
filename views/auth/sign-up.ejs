@@ -3,37 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="/stylesheet/register.css" />
   </head>
   <body>
-    <h1>Register</h1>
-    <form action="/auth/register" method="post">
-      <div>
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username" />
-      </div>
-      <div>
-        <label for="password">password</label>
-        <input type="text" name="password" id="password" />
-      </div>
-      <div>
-        <label for="confirmPassword">Confirmpassword</label>
-        <input type="text" name="confirmPassword" />
-      </div>
+    <nav>
+      <% if(user) { %>
+      <a href="/users/<%= user._id %>/workouts">Your workouts</a>
+      <a href="/users/<%= user._id %>/bmi">BMI</a>
+      <a href="/auth/sign-out">Sign Out</a>
+      <% } else { %>
+      <a href="/auth/sign-in">Sign In</a>
+      <a href="/auth/sign-up">Sign Up</a>
+      <% } %>
+    </nav>
 
-      <div>
-        <label for="Gender">Gender</label>
-        <input type="text" name="Gender" id="Gender" />
+    <div class="container">
+      <div class="body">
+        <div class="left">
+          <div class="up">
+            <p>Create an Account</p>
+            <form action="/auth/register" method="post">
+              <div class="input-group">
+                <label class="s1" for="username">Username</label>
+                <input class="input" type="text" name="username" id="username" required />
+              </div>
+              <div class="input-group">
+                <label class="s1" for="password">Password</label>
+                <input class="input" type="password" name="password" id="password" required />
+              </div>
+              <div class="input-group">
+                <label class="s1" for="confirmPassword">Confirm Password</label>
+                <input class="input" type="password" name="confirmPassword" id="confirmPassword" required />
+              </div>
+              <div class="input-group">
+                <label class="s1" for="Gender">Gender</label>
+                <input class="input" type="text" name="Gender" id="Gender" />
+              </div>
+              <div class="input-group">
+                <label class="s1" for="weight">Weight</label>
+                <input class="input" type="number" name="weight" id="weight" placeholder="in kg" />
+              </div>
+              <div class="input-group">
+                <label class="s1" for="height">Height</label>
+                <input class="input" type="number" name="height" id="height" placeholder="in cm" />
+              </div>
+              <button class="sub" type="submit">Create</button>
+            </form>
+          </div>
+          <div class="down">
+            <!-- Add additional content here if needed -->
+          </div>
+        </div>
       </div>
-      <div>
-        <label for="weight">weight</label>
-        <input type="number" name="weight" id="weight" placeholder="in kg" />
-      </div>
-      <div>
-        <label for="height">height</label>
-        <input type="number" name="height" id="height" placeholder="in cm " />
-      </div>
-      <button type="submit">Create Account</button>
-    </form>
+    </div>
   </body>
 </html>

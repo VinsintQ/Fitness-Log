@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding-top: 60px;
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+a {
+
+    margin-left: 12px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 10px 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 5px;
+
+    padding: 20px;
+
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #333333;
+}
+
+.workout-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.workout-list li {
+    margin: 10px 0;
+}
+
+.workout-list a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.workout-list a:hover {
+    color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        width: 95%;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
