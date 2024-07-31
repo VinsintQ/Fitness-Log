@@ -30,7 +30,9 @@
           <li>Date: <%= workout.Date.toISOString().split('T')[0] %></li>
           <li>Type: <%= workout.type %></li>
           <li>Time: <%= workout.Time %> minutes</li>
-          <li>Distance: <%= workout.Distance %> km</li>
+           <%if (workout.type!='Walking'){%>
+        <li>Distance:   <%= workout.Distance  %>km
+         <% }   %> </li>
           <li>Calories: <%= workout.Calories %> kcal</li>
         </ul>
         <div class="actions">

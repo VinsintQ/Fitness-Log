@@ -45,24 +45,24 @@ function calculateCalories() {
       const met = runMet(speed);
 
       calories = met * 80 * time;
-      caloriesField.value = calories;
-      cloriesfieldToSubmit.value = calories;
+      caloriesField.value =parseInt(calories);
+      cloriesfieldToSubmit.value = parseInt(calories);
     }
     //for Swimming
     if (type === "Swimming") {
       const met = swimMet(speed);
 
       const calories = met * 80 * time;
-      caloriesField.value = calories;
-      cloriesfieldToSubmit.value = calories;
+      caloriesField.value = parseInt(calories);
+      cloriesfieldToSubmit.value =parseInt(calories) ;
     }
     //for Cyclying
     if (type == "Cycling") {
       const met = cyclyingMet(speed);
 
       const calories = met * 80 * time;
-      caloriesField.value = calories;
-      cloriesfieldToSubmit.value = calories;
+      caloriesField.value = parseInt(calories);
+      cloriesfieldToSubmit.value =parseInt(calories) ;
     }
   }
   if (type == "Walking") {
@@ -77,8 +77,8 @@ function calculateCalories() {
     const met = 4;
    distanceField.value = 1;
     const calories = met * 80 * time;
-    caloriesField.value = calories;
-    cloriesfieldToSubmit.value = calories;
+    caloriesField.value = parseInt(calories);
+    cloriesfieldToSubmit.value = parseInt(calories);
   }
 }
 // calculate met for running
