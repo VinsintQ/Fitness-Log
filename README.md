@@ -2,19 +2,11 @@
 
 ## by : Mueen Ali
 
-### an application to track your workouts , where you can add/edit workouts
 
-### user stories :
 
-1- as a user i want to be able to sign in
+### Scope :
+an application to track your workouts , where you can add/edit workouts and calculate its calories , and trach your bmi
 
-2 - as a user i want to be able to add a workout (date ,type and time or distance).
-
-3- as a user i want to able to see calories each workout (calculated by app).
-
-4- as a user i want to able to edit my workout (change type and time ).
-
-5- as a user i want to be able to delete a workout
 
 feature to add :
 
