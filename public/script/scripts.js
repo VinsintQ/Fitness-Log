@@ -65,6 +65,15 @@ function calculateCalories() {
       cloriesfieldToSubmit.value =parseInt(calories) ;
     }
   }
+if ((type == "Walking") & (time > 0)) {
+    const met = 4;
+   distanceField.value = 1;
+    const calories = met * 80 * time;
+    caloriesField.value = parseInt(calories);
+    cloriesfieldToSubmit.value = parseInt(calories);
+  }
+
+
   if (type == "Walking") {
     distanceField.classList.add("hide");
     distanceLabel.classList.add("hide");
@@ -73,13 +82,7 @@ function calculateCalories() {
      distanceLabel.classList.remove("hide");
   }
   
-  if ((type == "Walking") & (time > 0)) {
-    const met = 4;
-   distanceField.value = 1;
-    const calories = met * 80 * time;
-    caloriesField.value = parseInt(calories);
-    cloriesfieldToSubmit.value = parseInt(calories);
-  }
+  
 }
 // calculate met for running
 function runMet(speedKmh) {
