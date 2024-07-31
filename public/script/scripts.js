@@ -49,7 +49,7 @@ function calculateCalories() {
       cloriesfieldToSubmit.value = calories;
     }
     //for Swimming
-    if (type == "Swimming") {
+    if (type === "Swimming") {
       const met = swimMet(speed);
 
       const calories = met * 80 * time;

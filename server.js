@@ -54,3 +54,4 @@ app.use("/users/:userId/bmi", bmiCtrl);
 app.listen(PORT, () => {
   console.log(`The express app is ready on port ${PORT}!`);
 });
+
