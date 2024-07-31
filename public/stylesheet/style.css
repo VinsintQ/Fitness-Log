@@ -10,7 +10,9 @@ body {
     padding-top: 60px;
     /* Ensure content starts below the fixed nav */
     font-family: "Edu AU VIC WA NT Hand", cursive;
-
+    background-image: url(../Images/backo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav {
