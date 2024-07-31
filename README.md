@@ -8,7 +8,7 @@
 
 1- as a user i want to be able to sign in
 
-2 - as a user i want to be able to add a workout (date ,type and time or distance ).
+2 - as a user i want to be able to add a workout (date ,type and time or distance).
 
 3- as a user i want to able to see calories each workout (calculated by app).
 
@@ -20,8 +20,26 @@ feature to add :
 
 - [ ] calculate a calorie for a day
 
-- [ ] add weight/height and see the BMI and msg if its low or high or average
+- [x] add weight/height and see the BMI 
 
 - [ ] create a plan of workouts and see plan calories .
 
-Trello Project Planning [here](https://trello.com/b/OpzPZ7t5/fitness-log)
+- [ ] add more exercises
+
+### Trello Project Planning [here](https://trello.com/b/OpzPZ7t5/fitness-log)
+
+## technologies used 
+- javascript
+- css
+- html
+- EJS
+- node
+
+
+## pictures from the app
+![log in ](public/Images/login.png)
+
+![add ](public/Images/add.png)
+
+![show](public/Images/show.png)
+
