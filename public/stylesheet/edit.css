@@ -2,9 +2,14 @@
 body {
     margin: 0;
     padding-top: 60px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
     background-color: #f4f4f9;
     color: #333;
+}
+
+.hide {
+
+    display: none;
 }
 
 nav {
@@ -71,23 +76,32 @@ h1 {
     color: #333;
 }
 
-.input {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-top: 5px;
+
+
+#time {
+
+    width: 77.9%;
 }
 
-#type {
+#distance {
+    width: 77%;
+}
 
-    width: 102.4%;
-    padding: 10px;
+#calories {
+    width: 84.8%;
+}
+
+#date {
+    width: 88.9%;
+}
+
+
+#type {
+    width: 90%;
+    padding: 8px;
     font-size: 1rem;
     border-radius: 5px;
     border: 1px solid #ccc;
-    margin-top: 5px;
 }
 
 */ .btn {

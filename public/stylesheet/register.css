@@ -3,6 +3,8 @@ body {
     /* Remove default margin to avoid unwanted space around the page */
     padding-top: 60px;
     /* Ensure content starts below the fixed nav */
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+
 }
 
 nav {
@@ -34,7 +36,7 @@ nav a {
     /* Text color for links */
     text-decoration: none;
     /* Remove underline */
-    font-family: 'Courier New', Courier, monospace;
+
     /* Font style */
     font-size: 1rem;
     /* Font size */
@@ -70,7 +72,7 @@ html {
 
 .right {
     font-size: 60px;
-    font-family: "Courier New", Courier, monospace;
+
     color: rgb(0, 0, 0);
     margin-top: 100px;
 }
@@ -82,33 +84,33 @@ html {
     background-color: white;
     align-items: center;
     border-radius: 6px;
-    height: 570px;
+    height: 590px;
     box-shadow: 0px 0px 15px rgb(186, 186, 186);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     /* Added padding for better form spacing */
 }
 
 .input {
-    margin-top: 3px;
+    margin-top: 1px;
     border-radius: 6px;
     border: 1px solid black;
-    height: 35px;
+    height: 30px;
     width: 370px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     /* Added margin for spacing between inputs */
 }
 
 .sub {
     width: 120px;
     height: 33px;
-    margin-top: 15px;
+    margin-top: 10px;
     border-radius: 6px;
     background-color: rgb(0, 0, 0);
     border: 0px;
-    font-family: "Courier New", Courier, monospace;
+
     color: white;
     font-size: 1.2rem;
 }
@@ -127,14 +129,14 @@ html {
     margin-bottom: 15px;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-family: "Courier New", Courier, monospace;
+
 }
 
 .up p {
     color: rgb(0, 0, 0);
     font-size: 2rem;
     /* Reduced size for form title */
-    font-family: "Courier New", Courier, monospace;
+
     margin-top: 15px;
     margin-bottom: 0px;
 }
@@ -146,7 +148,7 @@ html {
 
 span {
     color: rgb(0, 0, 0);
-    font-family: "Courier New", Courier, monospace;
+
     font-size: 1.3rem;
 }
 
@@ -177,7 +179,7 @@ span {
     background-color: rgb(0, 0, 0);
     border-radius: 6px;
     color: white;
-    font-family: "Courier New", Courier, monospace;
+
     padding-top: 7px;
     font-size: 1.2rem;
     padding-bottom: 2px;

@@ -6,6 +6,9 @@
     <title>Editing <%= workout.type %></title>
     <script src="/script/scripts.js" defer></script>
     <link rel="stylesheet" href="/stylesheet/edit.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheet/style.css" />
   </head>
 <!-- converting date  -->
 <% 
@@ -37,8 +40,8 @@ const formattedDate = date.toISOString().split('T')[0];
           </div>
 
           <div class="form-group">
-            <label for="distance">Distance (KM)</label>
-            <input class="input" type="number" name="distance" id="distance" value="<%= workout.Distance %>" min="1" required />
+            <label for="distance" class="distancelabel">Distance (KM)</label>
+            <input class="input" type="number" name="distance" id="distance" value="<%= workout.Distance %>" min="1"  />
           </div>
 
           <div class="form-group">

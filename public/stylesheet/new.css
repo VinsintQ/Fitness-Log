@@ -1,7 +1,12 @@
+.hide {
+
+    display: none;
+}
+
 body {
     margin: 0;
     padding-top: 60px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
     background-color: #f4f4f9;
     color: #333;
 }
@@ -70,16 +75,26 @@ h1 {
     color: #333;
 }
 
-.input {
-    width: 97.5%;
-    padding: 8px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+#time {
+
+    width: 75.5%;
 }
 
+#distance {
+    width: 74.5%;
+}
+
+#calories {
+    width: 84.5%;
+}
+
+#date {
+    width: 88.9%;
+}
+
+
 #type {
-    width: 100%;
+    width: 90%;
     padding: 8px;
     font-size: 1rem;
     border-radius: 5px;
@@ -88,7 +103,7 @@ h1 {
 
 .sub {
     width: 150px;
-    padding: 10px;
+
     background-color: #000000;
     color: white;
     border: none;
@@ -96,6 +111,7 @@ h1 {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
+
 }
 
 .sub:hover {

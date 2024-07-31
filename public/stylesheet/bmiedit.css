@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding-top: 60px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
     background-color: #f4f4f9;
     color: #333;
     text-align: center;
@@ -24,7 +24,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    font-family: "Courier New", Courier, monospace;
+
     font-size: 1rem;
     transition: color 0.3s;
 }

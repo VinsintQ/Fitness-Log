@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update BMI</title>
     <link rel="stylesheet" href="/stylesheet/bmiedit.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheet/style.css" />
 </head>
 <body>
     <%- include('../partials/_navbar.ejs') %>
@@ -13,7 +16,7 @@
         <form action="/users/<%= user._id %>/bmi?_method=PUT" method="post" class="bmi-form">
             <div class="form-group">
                 <label for="weight">Weight (kg)</label>
-                <input type="number" name="weight" id="weight" value="<%= weight %>" required>
+                <input type="text" name="weight" id="weight" value="<%= weight %>" required>
             </div>
             <div class="form-group">
                 <label for="height">Height (cm)</label>

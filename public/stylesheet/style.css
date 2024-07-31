@@ -9,6 +9,8 @@ body {
     /* Remove default margin to avoid unwanted space around the page */
     padding-top: 60px;
     /* Ensure content starts below the fixed nav */
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+
 }
 
 nav {
@@ -40,7 +42,8 @@ nav a {
     /* Text color for links */
     text-decoration: none;
     /* Remove underline */
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+
     /* Font style */
     font-size: 1rem;
     /* Font size */
@@ -76,7 +79,8 @@ html {
 
 .right {
     font-size: 60px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+
     color: rgb(0, 0, 0);
     margin-top: 100px;
 }
@@ -114,7 +118,8 @@ html {
     border-radius: 6px;
     background-color: rgb(0, 0, 0);
     border: 0px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+
     color: white;
     font-size: 1.2rem;
 }
@@ -133,14 +138,16 @@ html {
     margin-bottom: 15px;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+
 }
 
 .up p {
     color: rgb(0, 0, 0);
     font-size: 2rem;
     /* Reduced size for form title */
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+
     margin-top: 15px;
     margin-bottom: 0px;
 }
@@ -152,11 +159,14 @@ html {
 
 span {
     color: rgb(0, 0, 0);
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+
     font-size: 1.3rem;
 }
 
-
+.sub {
+    height: 35px;
+}
 
 .s1,
 .s2 {
@@ -179,11 +189,12 @@ span {
     text-decoration: none;
     margin-top: 15px;
     width: 130px;
-    height: 25px;
+    height: 28px;
     background-color: rgb(0, 0, 0);
     border-radius: 6px;
     color: white;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+
     padding-top: 7px;
     font-size: 1.2rem;
     padding-bottom: 2px;

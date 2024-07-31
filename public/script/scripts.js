@@ -11,7 +11,7 @@ let type = typeField.value;
 let distance = distanceField.value;
 let speed = distance / time;
 calculateCalories();
-//adding Even Listenrs
+
 
 //read time
 timeField.addEventListener("change", () => {
@@ -39,8 +39,7 @@ distanceField.addEventListener("change", () => {
 //functions
 function calculateCalories() {
   if (time && distance && type) {
-    distanceField.classList.remove("hide");
-    distanceLabel.classList.remove("hide");
+    
     //for Running
     if (type === "Running") {
       const met = runMet(speed);
@@ -70,14 +69,16 @@ function calculateCalories() {
     distanceField.classList.add("hide");
     distanceLabel.classList.add("hide");
   } else {
-    // distanceField.classList.remove("hide");
-    // distanceLabel.classList.remove("hide");
+     distanceField.classList.remove("hide");
+     distanceLabel.classList.remove("hide");
   }
+  
   if ((type == "Walking") & (time > 0)) {
     const met = 4;
-
+   distanceField.value = 1;
     const calories = met * 80 * time;
     caloriesField.value = calories;
+    cloriesfieldToSubmit.value = calories;
   }
 }
 // calculate met for running
