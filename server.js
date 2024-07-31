@@ -16,8 +16,8 @@ const passUserToView = require("./middleware/pass-user-to-view.js");
 const workoutsCtrl = require("./controllers/workouts.js");
 const authController = require("./controllers/auth.js");
 const bmiCtrl = require("./controllers/bmi.js");
-const port = process.env.PORT ? process.env.PORT : "3000";
-
+// const port = process.env.PORT ? process.env.PORT : "3000";
+const PORT = process.env.PORT || 3000;
 mongoose.connect(process.env.MONGODB_URI);
 
 mongoose.connection.on("connected", () => {
@@ -51,6 +51,6 @@ app.use("/auth", authController);
 app.use(isSignedIn);
 app.use("/users/:userId/workouts", workoutsCtrl);
 app.use("/users/:userId/bmi", bmiCtrl);
-app.listen(port, () => {
-  console.log(`The express app is ready on port ${port}!`);
+app.listen(PORT, () => {
+  console.log(`The express app is ready on port ${PORT}!`);
 });
