@@ -1,4 +1,3 @@
-/* General styles */
 body {
     margin: 0;
     padding-top: 60px;
@@ -41,9 +40,9 @@ nav a:hover {
     text-align: center;
 }
 
-.form-container {
+.workout-details {
     background-color: white;
-    padding: 35px;
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -54,60 +53,54 @@ h1 {
     color: #000;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form-group {
-    margin-bottom: 15px;
-    width: 100%;
+.details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
     text-align: left;
 }
 
-.form-group label {
-    font-size: 1.1rem;
-    color: #333;
+.details-list li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-.input {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-top: 5px;
+.actions {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-#type {
-
-    width: 102.4%;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-top: 5px;
-}
-
-*/ .btn {
-    width: 100%;
-    max-width: 200px;
-    padding: 10px;
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
     background-color: #000000;
     color: white;
     border: none;
     border-radius: 5px;
+    text-decoration: none;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .btn:hover {
     background-color: #333333;
 }
 
-/* Responsive Design */
+.delete-btn {
+    background-color: #ff4d4d;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+.delete-form {
+    display: inline;
+}
+
 @media (max-width: 768px) {
     .container {
         width: 90%;

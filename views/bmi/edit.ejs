@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Update BMI</title>
+    <link rel="stylesheet" href="/stylesheet/bmiedit.css" />
 </head>
 <body>
     <%- include('../partials/_navbar.ejs') %>
-    <form action="/users/<%= user._id %>/bmi?_method=PUT" method="post">
-        <label for="weight">weight</label>
-     <input type="text" name="weight" id="" value="<%= weight %>">
-
-     <label for="height">height</label>
-     <input type="text" name="height" id="" value="<%= height %>">
-
-  <button type="submit">update</button>
-    </form>
+    <div class="container">
+        <h1>Update Your BMI</h1>
+        <form action="/users/<%= user._id %>/bmi?_method=PUT" method="post" class="bmi-form">
+            <div class="form-group">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" name="weight" id="weight" value="<%= weight %>" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Height (cm)</label>
+                <input type="number" name="height" id="height" value="<%= height %>" required>
+            </div>
+            <button type="submit" class="btn">Update</button>
+        </form>
+    </div>
 </body>
 </html>

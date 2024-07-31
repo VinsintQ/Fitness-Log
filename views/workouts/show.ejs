@@ -4,22 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet/show.css" />
   </head>
   <body>
-    <%- include('../partials/_navbar.ejs') %> 
-    <h1>Date :<%=workout.Date.toISOString().split('T')[0] %></h1>
-    <h1>type :<%=workout.type %></h1>
-    <h1>time :<%=workout.Time %></h1>
-    <h1>distance :<%=workout.Distance %></h1>
-    <h1>calories :<%=workout.Calories %></h1>
-    <a href="/users/<%= user._id %>/workouts/<%= workout._id %>/edit">
-      Edit this application
-    </a>
-    <form
-      action="/users/<%= user._id %>/workouts/<%= workout._id %>?_method=DELETE"
-      method="POST"
-    >
-      <button type="submit">Delete this workout</button>
-    </form>
+    <nav>
+      <% if (user) { %>
+        <a href="/users/<%= user._id %>/workouts">Your Workouts</a>
+        <a href="/users/<%= user._id %>/bmi">BMI</a>
+        <a href="/auth/sign-out">Sign Out</a>
+      <% } else { %>
+        <a href="/auth/sign-in">Sign In</a>
+        <a href="/auth/sign-up">Sign Up</a>
+      <% } %>
+    </nav>
+    
+
+
+    <div class="container">
+      <div class="workout-details">
+        <h1>Workout Details</h1>
+        <ul class="details-list">
+          <li>Date: <%= workout.Date.toISOString().split('T')[0] %></li>
+          <li>Type: <%= workout.type %></li>
+          <li>Time: <%= workout.Time %> minutes</li>
+          <li>Distance: <%= workout.Distance %> km</li>
+          <li>Calories: <%= workout.Calories %> kcal</li>
+        </ul>
+        <div class="actions">
+          <a class="btn" href="/users/<%= user._id %>/workouts/<%= workout._id %>/edit">
+            Edit Workout
+          </a>
+          <form
+            action="/users/<%= user._id %>/workouts/<%= workout._id %>?_method=DELETE"
+            method="POST"
+            class="delete-form"
+          >
+            <button class="btn delete-btn" type="submit">Delete Workout</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
