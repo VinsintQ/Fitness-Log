@@ -5,6 +5,9 @@ body {
     background-color: #f4f4f9;
     color: #333;
     text-align: center;
+    background-image: url(../Images/backo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav {
