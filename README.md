@@ -11,7 +11,6 @@ an application to track your workouts , where you can add/edit workouts and calc
 
 feature to add :
 
-- [ ] calculate a calorie for a day
 
 - [x] add weight/height and see the BMI 
 
