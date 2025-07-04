@@ -14,9 +14,7 @@ feature to add :
 
 - [x] add weight/height and see the BMI 
 
-- [ ] create a plan of workouts and see plan calories .
 
-- [ ] add more exercises
 
 ### Trello Project Planning [here](https://trello.com/b/OpzPZ7t5/fitness-log)
 
