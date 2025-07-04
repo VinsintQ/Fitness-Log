@@ -5,13 +5,12 @@
 
 
 ### Scope :
-an application to track your workouts , where you can add/edit workouts and calculate its calories , and trach your bmi
+an application to track your workouts , where you can add/edit workouts and calculate its calories 
 
 #### a link to deployed app [here](https://fitness-log-8da007ba5e00.herokuapp.com/)
 
 feature to add :
 
-- [ ] calculate a calorie for a day
 
 - [x] add weight/height and see the BMI 
 
